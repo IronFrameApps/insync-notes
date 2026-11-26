@@ -11,3 +11,10 @@
 
 ## Rule
 Test ONE boss with ONE animation (Warrior Idle) first: check facing, arms and snapping, before importing all 29.
+
+## Blender check results (2026-11-26, read-only)
+- Facing: both boss rigs and all Mixamo animation files share the same layout (armature rot 90, scale 0.01, toes toward -Y in Blender, hands 0.69 m out in T-pose). Rig and animations MATCH, so the wrong facing in UEFN comes from UEFN's import axis. Fix by rotating the boss (test on one boss).
+- Snap cause CONFIRMED, root motion (hips travel in metres): Shoulder Throw 4.7, Hurricane Kick 3.7, Flying Bicycle Kick 2.4, Flying Kick-3 2.4, Chapa-Giratoria 2.1, Punch To Elbow Combo-2 1.9, Hell Slammer A 1.7, Dodging 1.0, Fist Fight A 1.0. Re-download these from Mixamo with In Place ticked.
+- Already in place (zero drift, safe): Warrior Idle, Taunt, Body Block, Boxing x4, Elbow Punch x2, Headbutt, Jumping, Knee Jab, Martelo 2, Pontera, Punching x2, Reaction-2, Receive Punch, Receive Uppercut, Standing Taunt Battlecry-2.
+- Walking.fbx (with skin) is HALF SIZE (hips 0.51 m vs 1.05 m on the others). Do not use; re-download a walk and a run, In Place.
+- Test plan: one boss, Warrior Idle only; report facing and snapping before importing the rest.
