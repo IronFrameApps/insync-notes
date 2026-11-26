@@ -2,6 +2,12 @@
 
 Pasted by JP 2026-11-25 (source: an AI answer, not copied from Epic; the doc names at the bottom are Epic pages to read). Use for the white boss vs black boss fight.
 
+## First: which setup are the bosses using?
+1. Scripted fight: skeletal meshes animated in a Level Sequence, played by a Cinematic Sequence device (teleporting and spinning usually point here; fixes below).
+2. AI-driven bosses: NPC or Guard spawners that fight on their own (positions vary, no sync).
+3. Verse: code that moves them with TeleportTo or MoveTo (paste the code and check it).
+Ask JP which one before fixing.
+
 ## Symptom / likely cause / fix
 | Symptom | Likely cause | Fix |
 |---|---|---|
